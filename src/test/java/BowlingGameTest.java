@@ -35,5 +35,32 @@ public class BowlingGameTest {
         //then
         Assertions.assertEquals(140,result);
     }
+    @Test
+    public void should_return_the_true_number_when_all_first_plus_second_is_not_10(){
+        //given
+        int temp[] = new int[]{1,2,3,2,1,2,3,2,1,2,3,2,1,2,3,2,1,2,3,2};
+        //when
+        int result = BowlingGameScore.calculate_Bowling_Score(temp);
+        //then
+        Assertions.assertEquals(40,result);
+    }
+    @Test
+    public void should_return_the_true_number_when_all_10_or_first_plus_second_is_10(){
+        //given
+        int temp[] = new int[]{10,1,9,10,2,8,4,6,3,7,1,9,10,3,7,10,1,9};
+        //when
+        int result = BowlingGameScore.calculate_Bowling_Score(temp);
+        //then
+        Assertions.assertEquals(178,result);
+    }
+    @Test
+    public void should_return_the_true_number_when_contains_first_plus_second_is_10(){
+        //given
+        int temp[] = new int[]{10,1,3,8,2,3,4,6,3,7,1,10,10,3,6,4,3};
+        //when
+        int result = BowlingGameScore.calculate_Bowling_Score(temp);
+        //then
+        Assertions.assertEquals(113,result);
+    }
 
 }
