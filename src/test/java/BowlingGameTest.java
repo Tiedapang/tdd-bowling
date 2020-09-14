@@ -26,5 +26,14 @@ public class BowlingGameTest {
         //then
         Assertions.assertEquals(300,result);
     }
+    @Test
+    public void should_return_the_true_number_when_all_spare(){
+        //given
+        int temp[] = new int[]{4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4,6,4};
+        //when
+        int result = BowlingGameScore.calculate_Bowling_Score(temp);
+        //then
+        Assertions.assertEquals(140,result);
+    }
 
 }
