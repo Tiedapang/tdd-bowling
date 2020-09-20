@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class BowlingGameScore {
 
-
-
     public static int calculate_Bowling_Score(int[] score) {
         int total_score=0;
         int index = 0;
