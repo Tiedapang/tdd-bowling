@@ -1,19 +1,7 @@
 import java.util.Scanner;
 
 public class BowlingGameScore {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String[]  arr = scan.nextLine().split(",");
-        int score[] = new int[arr.length];
 
-        for(int i = 0;i<arr.length;i++){
-            score[i] = Integer.parseInt(arr[i]);
-
-        }
-        int result = calculate_Bowling_Score(score);
-        System.out.println(result);
-
-    }
 
 
     public static int calculate_Bowling_Score(int[] score) {
